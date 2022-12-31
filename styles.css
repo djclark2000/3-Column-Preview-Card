@@ -1,0 +1,188 @@
+/* CSS rules to specify families:
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+
+/* Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%) */
+
+/* Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%) */
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 15px
+}
+
+
+#parent-container {  
+    margin: 15%;
+    display: flex;
+}
+
+
+.container{
+    /* border: 0.5px solid gray; */
+    padding: 5%;
+    
+}
+
+.container1 {
+    background-color: #e38826;
+    border-radius: 2% 0 0 2%;
+}
+
+.container2 {
+    background-color:  hsl(184, 100%, 22%);
+}
+
+.container3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 2% 2% 0;
+}
+
+.icon, .name {
+    padding-bottom: 20px;
+}
+
+p {
+    padding-bottom: 40px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    color: #d9d9d9;
+}  
+
+
+
+.name {
+    font-family: 'Big Shoulders Display', cursive; 
+    font-size: 2rem;
+    color: hsl(0, 0%, 95%); 
+
+}
+
+
+.button1 {
+    background: #d9d9d9;
+    background-image: -webkit-linear-gradient(top, #d9d9d9, #d9d9d9);
+    background-image: -moz-linear-gradient(top, #d9d9d9, #d9d9d9);
+    background-image: -ms-linear-gradient(top, #d9d9d9, #d9d9d9);
+    background-image: -o-linear-gradient(top, #d9d9d9, #d9d9d9);
+    background-image: linear-gradient(to bottom, #d9d9d9, #d9d9d9);
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #e38826;
+    font-size: 0.8rem;
+    padding: 12px 27px 12px 27px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+.button1:hover {
+  text-decoration: none;
+}
+
+
+.button2 {
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #006970;
+    font-size: 0.8rem;
+    font-weight: 700;
+    background: ##d9d9d9;
+    padding: 12px 27px 12px 27px;
+    text-decoration: none;
+}
+  
+.button2:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+.button3 {
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #004241;
+    font-size: 0.8rem;
+    font-weight: 700;
+    background: ##d9d9d9;
+    padding: 12px 27px 12px 27px;
+    text-decoration: none;
+}
+  
+.button3:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 722px){
+    #parent-container {  
+        
+        flex-direction: column;  
+    }
+
+    .button {
+        margin-bottom: 10%;
+    }
+
+    .icon {
+        margin-top: 7%;
+    }
+    p, .name, .icon, .button{
+        padding-right: 20%;
+        padding-left: 10%;
+    }
+
+    .container1 {
+        
+        border-radius: 2% 2% 0 0;
+    }
+    
+    .container3 {
+        
+        border-radius: 0 0 2% 2%;
+    }
+}
+
+
+@media (min-width: 490px) and (max-width: 722px) {
+    #parent-container{
+        margin: 15% 30%;
+    }
+}
+
+@media (min-width: 723px) and (max-width: 800px) {
+    #parent-container{
+        margin: 15% 10%;
+    }
+}
